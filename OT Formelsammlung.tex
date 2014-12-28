@@ -15,6 +15,91 @@ Dieser Text ist unter dieser \href{http://creativecommons.org/licenses/by-nc-sa/
 \newpage
 
 
+\section{Linsen}
+
+\begin{align*}
+\frac{1}{f} &= \frac{1}{b} + \frac{1}{g}  \\
+m &= - \frac{b}{g}
+\intertext{Linsenschleiferfromel für dünne Linsen:}
+\frac{1}{f} &= \left( n - 1 \right) \cdot \left( \frac{1}{r_1} - \frac{1}{r_2} \right)
+\intertext{Linsenschleiferfromel für dicke Linsen:}
+\frac{1}{f} &= \left( n - 1 \right) \cdot \left( \frac{1}{r_1} - \frac{1}{r_2}  + \frac{(n - 1) \cdot d}{r_1 \cdot r_2 \cdot n}\right)
+\end{align*}
+
+
+
+\section{Polarsation}
+
+\begin{align*}
+\intertext{Allgemeine Transmission:}
+T_\perp &= e^{-\mu_\perp \cdot d} \\
+T_\parallel &= e^{-\mu_\parallel \cdot d} 
+\intertext{Dicke eine Lambdaviertelplatte:}
+d &= \frac{\lambda}{4 \cdot |n_o - n_e|}
+\end{align*}
+
+Falls mit den Stokes Matrizen gerechnet werden soll bekommen wir die Tabelle dazu. Wichtig ist, das die Matrizen in umgekehrter Reihenfolge des Lichtwegs miteinander multipliziert werden.
+
+\section{Reflexionen / Transmission}
+
+\begin{align*}
+\intertext{Die Dicke einer Antireflexschicht ist:}
+d &= \frac{\lambda_0}{4 \cdot n_{AR}}
+\intertext{Das erzeugt einen Gangunterschied von:}
+\phi &= \frac{2 \pi}{\lambda} \cdot \frac{\lambda'}{2}
+\intertext{Dabei ist $\lambda'$ die Wellenlänge gegen die die Antireflexschicht wirkt und $\lambda$ die eingestrahlte Wellenlänge.}
+\end{align*}
+
+Für die innere Transmission gilt:
+
+\begin{align*}
+T &= \frac{\left( 1 - R \right)^2 \cdot \tau}{1 - \left( R \tau \right)^2} \qquad \text{mit} \qquad \tau = e^{-Kd} 
+\intertext{Für die Oberflächenreflexion gilt:}
+R &= \left( \frac{n - 1}{n + 1} \right)^2
+\end{align*}
+
+Für den Brechungsindex einer Antireflexschicht auf einem Medium gilt:
+
+\begin{align*}
+n_{AR} &= \sqrt{n_{Medium}}
+\end{align*}
+
+
+
+
+\section{Beugung}
+
+\begin{align*}
+\intertext{Intensität am Spalt:}
+I(\theta) &= \frac{\sin^2\left( \frac{\pi b \sin(\theta)}{\lambda} \right)}{\left( \frac{\pi b \sin(\theta)}{\lambda} \right)^2}
+\intertext{Im ersten Minimum gilt:}
+\pi &= \frac{\pi b \sin(\theta)}{\lambda}
+\intertext{Für kleine Winkel gilt:}
+\tan(\theta) &= \theta = \sin(\theta) = \frac{\lambda}{b}
+\intertext{Wir definieren $\Delta x$ als den Abstand vom zentralen Maximum zum ersten Minumum:}
+\Delta x &= L \cdot \frac{\lambda}{b}
+\end{align*}
+
+Für eine Lochblende gilt:
+
+\begin{align*}
+I(\theta) \sim \left[ \frac{2 j_1 \cdot \left( \pi d \cdot \frac{\sin(\theta)}{\lambda} \right)}{\pi d \frac{\sin(\theta)}{\lambda}} \right]^2
+\intertext{Der erste dunkle Ring entspricht nun der ersten Nullstelle von $j_1$. Aus der Vorlesund wissen wir das dies bei $x = 1,22 \pi$ der Fall ist:}
+1,22 \pi &= \pi d \cdot \frac{\sin(\theta)}{\lambda} \\
+\Leftrightarrow \sin(\theta) &= 1,22 \cdot \frac{\lambda}{d} \approx \theta
+\end{align*}
+
+Dabei ist $d$ der Durchmesser des Lochs.
+
+
+
+
+
+
+
+
+
+
 
 
 
