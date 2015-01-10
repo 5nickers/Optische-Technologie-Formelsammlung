@@ -22,10 +22,14 @@ Dieser Text ist unter dieser \href{http://creativecommons.org/licenses/by-nc-sa/
 \begin{align*}
 \frac{1}{f} &= \frac{1}{b} + \frac{1}{g}  \\
 m &= - \frac{b}{g}
+\intertext{Linsen (dünn) mit Abstand:}
+\frac{1}{f} &= \frac{1}{b} + \frac{1}{g} - \frac{d}{f_1 f_2}
 \intertext{Linsenschleiferfromel für dünne Linsen:}
 \frac{1}{f} &= \left( n - 1 \right) \cdot \left( \frac{1}{r_1} - \frac{1}{r_2} \right)
 \intertext{Linsenschleiferfromel für dicke Linsen:}
 \frac{1}{f} &= \left( n - 1 \right) \cdot \left( \frac{1}{r_1} - \frac{1}{r_2}  + \frac{(n - 1) \cdot d}{r_1 \cdot r_2 \cdot n}\right)
+\intertext{Brennpunkt:}
+s'' &= \frac{f_2 \cdot \left( f_1 - d \right)}{f_1 + f_2 - d}
 \end{align*}
 
 \subsection*{Lupe}
@@ -49,7 +53,6 @@ V_{Ob} &= \frac{B}{G} = \frac{-t}{f_{Ob}}
 \end{align*}
 
 
-\newpage
 
 \subsection*{Teleskop}
 
@@ -134,10 +137,33 @@ I(\theta) \sim \left[ \frac{2 j_1 \cdot \left( \pi d \cdot \frac{\sin(\theta)}{\
 Dabei ist $d$ der Durchmesser des Lochs.
 
 
+\section{Lichtleiter}
+
+\begin{align*}
+\intertext{Numersche Apertur}
+N_A &= \sqrt{n_{core}^2 - n_{clad}^2} = n_{aus} \cdot \sin(\theta_{aus})
+\end{align*}
 
 
+\section{Geometrische Optik}
 
 
+\begin{align*}
+\intertext{Sphärischer Spiegel}
+\frac{1}{g} &+ \frac{1}{b} = \frac{2}{r} = \frac{1}{f}
+\intertext{Abbildung an spärischen Flächen}
+\frac{n_1}{g} + \frac{n_2}{b} &= \frac{n_2 - n_1}{r} \qquad n_2 > n_1 \\
+m &= \frac{B}{G} = - \frac{n_1 \cdot b}{n_2 \cdot g}
+\intertext{Besselverfahren:}
+d &= g + b - b_{anst} \\
+f &= \frac{1}{4} \cdot \frac{d^2 - \Delta^2}{d}
+\intertext{Bildfeldwölbung:}
+\Delta x &= \frac{y^2}{2} \cdot \frac{1}{nf} 
+\intertext{mit y als Abstand Punkt - optische Achse und $\Delta x$ als Abstand Punkt - Parabel Schirm}
+\intertext{Abbezahlen:}
+v_1 &= \frac{n_{1B} - n_{1R}}{n_{1G} - 1} \\
+v_2 &= \frac{n_{2B} - n_{2R}}{n_{2G} - 1}
+\end{align*}
 
 
 
