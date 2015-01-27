@@ -11,7 +11,6 @@ Dieser Text ist unter dieser \href{http://creativecommons.org/licenses/by-nc-sa/
 
 \tableofcontents
 
-
 \newpage
 
 
@@ -35,7 +34,7 @@ s'' &= \frac{f_2 \cdot \left( f_1 - d \right)}{f_1 + f_2 - d}
 \subsection*{Lupe}
 
 \begin{align*}
-V_L &= \frac{\epsilon}{\epsilon_0} = \frac{S_0}{f}
+V_L &= \frac{\epsilon}{\epsilon_0} = \frac{S_0}{f} + 1
 \end{align*}
 
 Dabei ist $\epsilon_0$ der Sehwinkel ohne Lupe, $\epsilon$ der mit Lupe und $S_0$ der Abstand vom Nahpunkt zum Auge.
@@ -70,6 +69,11 @@ V_{Ob} &= \frac{B}{G} = \frac{-t}{f_{Ob}}
 \end{align*}
 
 
+\subsection*{Kamera}
+
+\begin{align*}
+Blendenzahl = \frac{f}{d}
+\end{align*}
 
 
 
@@ -80,10 +84,13 @@ V_{Ob} &= \frac{B}{G} = \frac{-t}{f_{Ob}}
 T_\perp &= e^{-\mu_\perp \cdot d} \\
 T_\parallel &= e^{-\mu_\parallel \cdot d} 
 \intertext{Dicke eine Lambdaviertelplatte:}
-d &= \frac{\lambda}{4 \cdot |n_o - n_e|}
+d &= \frac{\lambda}{4 \cdot |n_o - n_e|} \\
+o: E_1(t) &= E_0 \sin(\phi) \cos(\omega t) \\
+ao: o: E_2(t) &= E_0 \cos(\phi) \sin(\omega t) \\
+I &= \frac{c}{2n} \epsilon_0 E_0^2
 \end{align*}
 
-Falls mit den Stokes Matrizen gerechnet werden soll bekommen wir die Tabelle dazu. Wichtig ist, das die Matrizen in umgekehrter Reihenfolge des Lichtwegs miteinander multipliziert werden.
+\newpage
 
 \section{Reflexionen / Transmission}
 
@@ -93,6 +100,10 @@ d &= \frac{\lambda_0}{4 \cdot n_{AR}}
 \intertext{Das erzeugt einen Gangunterschied von:}
 \phi &= \frac{2 \pi}{\lambda} \cdot \frac{\lambda'}{2}
 \intertext{Dabei ist $\lambda'$ die Wellenlänge gegen die die Antireflexschicht wirkt und $\lambda$ die eingestrahlte Wellenlänge.}
+\intertext{Extinkt./ optische Dichte}
+E_\lambda &= -\lg\left( \frac{I}{I_0} \right) = \epsilon_\lambda \cdot c \cdot d
+\intertext{Lambert-Beersches Gesetz:}
+I(d) &= I_0 \cdot e^{-\epsilon c d}
 \end{align*}
 
 Für die innere Transmission gilt:
@@ -112,29 +123,7 @@ n_{AR} &= \sqrt{n_{Medium}}
 
 
 
-\section{Beugung}
-
-\begin{align*}
-\intertext{Intensität am Spalt:}
-I(\theta) &= \frac{\sin^2\left( \frac{\pi b \sin(\theta)}{\lambda} \right)}{\left( \frac{\pi b \sin(\theta)}{\lambda} \right)^2}
-\intertext{Im ersten Minimum gilt:}
-\pi &= \frac{\pi b \sin(\theta)}{\lambda}
-\intertext{Für kleine Winkel gilt:}
-\tan(\theta) &= \theta = \sin(\theta) = \frac{\lambda}{b}
-\intertext{Wir definieren $\Delta x$ als den Abstand vom zentralen Maximum zum ersten Minumum:}
-\Delta x &= L \cdot \frac{\lambda}{b}
-\end{align*}
-
-Für eine Lochblende gilt:
-
-\begin{align*}
-I(\theta) \sim \left[ \frac{2 j_1 \cdot \left( \pi d \cdot \frac{\sin(\theta)}{\lambda} \right)}{\pi d \frac{\sin(\theta)}{\lambda}} \right]^2
-\intertext{Der erste dunkle Ring entspricht nun der ersten Nullstelle von $j_1$. Aus der Vorlesund wissen wir das dies bei $x = 1,22 \pi$ der Fall ist:}
-1,22 \pi &= \pi d \cdot \frac{\sin(\theta)}{\lambda} \\
-\Leftrightarrow \sin(\theta) &= 1,22 \cdot \frac{\lambda}{d} \approx \theta
-\end{align*}
-
-Dabei ist $d$ der Durchmesser des Lochs.
+\newpage
 
 
 \section{Lichtleiter}
@@ -165,6 +154,34 @@ f &= \frac{1}{4} \cdot \frac{d^2 - \Delta^2}{d}
 \end{align*}
 
 
+\section{Beugung}
+
+\begin{align*}
+\intertext{Intensität am Spalt:}
+I(\theta) &= \frac{\sin^2\left( \frac{\pi b \sin(\theta)}{\lambda} \right)}{\left( \frac{\pi b \sin(\theta)}{\lambda} \right)^2}
+\intertext{Im ersten Minimum gilt:}
+\pi &= \frac{\pi b \sin(\theta)}{\lambda}
+\intertext{Für kleine Winkel gilt:}
+\tan(\theta) &= \theta = \sin(\theta) = \frac{\lambda}{b}
+\intertext{Wir definieren $\Delta x$ als den Abstand vom zentralen Maximum zum ersten Minumum:}
+\Delta x &= L \cdot \frac{\lambda}{b}
+\end{align*}
+
+Für eine Lochblende gilt:
+
+\begin{align*}
+I(\theta) \sim \left[ \frac{2 j_1 \cdot \left( \pi d \cdot \frac{\sin(\theta)}{\lambda} \right)}{\pi d \frac{\sin(\theta)}{\lambda}} \right]^2
+\intertext{Der erste dunkle Ring entspricht nun der ersten Nullstelle von $j_1$. Aus der Vorlesund wissen wir das dies bei $x = 1,22 \pi$ der Fall ist:}
+1,22 \pi &= \pi d \cdot \frac{\sin(\theta)}{\lambda} \\
+\Leftrightarrow \sin(\theta) &= 1,22 \cdot \frac{\lambda}{d} \approx \theta
+\end{align*}
+
+Dabei ist $d$ der Durchmesser des Lochs.
+
+
+
+
+
 \section{Licht}
 
 
@@ -186,13 +203,6 @@ E &= K_m \cdot V(\lambda) \cdot E_e
 \intertext{Lichtstrom:}
 \phi &= K \cdot V(\lambda) \cdot \phi_e
 \end{align*}
-
-
-
-
-
-
-
 
 
 
